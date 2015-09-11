@@ -1,10 +1,91 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
+To change this license header; choose License Headers in Project Properties.
+To change this template file; choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 10/09/2015, 12:38:22 PM
+    Created on : 10/09/2015; 12:38:22 PM
     Author     : Heiner
 */
 
+body{
+    background-color: gray;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('../img/wood.jpg');
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 14pt;
+    font-family: Georgia, serif;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    //background-color: black;
+    //border: 1px solid black;
+}
+
+article{
+    margin: 0 auto;
+    background-color: #F1EFED;
+    color: #44494B;
+    font-style: italic;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 4 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    max-width: 300px;
+
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+
+article img{
+    width: 100%;
+}
+
+article section{
+    padding: 1.5rem;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 4 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    
+}
+
+article section h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+}
+
+article section p{
+    color: #ACB1B6;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+    
+}
+
+article footer{
+    padding: 1.5rem;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0eeea+0,f1e8da+100 */
+    background: #f0eeea; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f0eeea 0%, #f1e8da 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0eeea), color-stop(100%,#f1e8da)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f0eeea 0%,#f1e8da 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f0eeea 0%,#f1e8da 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f0eeea 0%,#f1e8da 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f0eeea 0%,#f1e8da 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0eeea', endColorstr='#f1e8da',GradientType=0 ); /* IE6-9 */
+
+}
+
+article footer .price{
+
+}
