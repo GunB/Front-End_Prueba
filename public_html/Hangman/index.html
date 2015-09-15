@@ -1,47 +1,48 @@
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width">
 
-  <title>DomiciliosTest</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="game.built.js"></script>
-  <script src="solver.js"></script>
-  <style type="text/css">
-    body { 
-      width: 500px;
-      margin: 0 auto;
-      text-align: center;
-      margin-top: 20px;
-      font-family: 'Helvetica', sans-serif;
-    }
-  </style>
-</head>
-  <body>
-    <div>
-    <h3>* Run in localhost! (or a virtual host) *</h3>
-    <h1>Open the console and start a game with Game.start();<br><br>Good luck! :)</h1>
-    <hr>
-    <h4>Instructions</h4>
-    <div style="text-align:left">
-      <p>You have to guess 50 random words, every 10 the word you have to guess increases 1 character.</p>
-      <p>You need to call Game.start() a first time to load the words file (words.txt) and then call again Game.start() to actually start the game and get the first word you'll have to guess.</p>
-      <p>Call Game.word() at any time to get the current word.</p>
-      <p>You have 10 wrong guesses per word, once this limit is reached you have to get a new word by calling Game.next()</p>
-      <p>At any time you can call Game.result() to generate the result page, but keep in mind is better if you do it at the end of the game</p>
-      <p>
-        Game.guess('a') => will guess the letter 'a', if the letter is found, it returns the current word
-        with that letter revealed, if not, it returns:
-        <ul>
-          <li>true: if the word has been guess correctly</li>
-          <li>false: if the letter is not present</li>
-          <li>-1: if you send something different than one letter (+1 attempt)</li>
-          <li>-2: if the allowed attemps have been reached</li>
-          <li>-3: if you send a letter already guessed (+1 attempt)</li>
-        </ul>
-      </p>
-    </div>
-    </div>
-  </body>
+        <title>DomiciliosTest</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="game.built.js"></script>
+        <script src="solver.js"></script>
+        <style type="text/css">
+            body { 
+                width: 500px;
+                margin: 0 auto;
+                text-align: center;
+                margin-top: 20px;
+                font-family: 'Helvetica', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h3>* Run in localhost! (or a virtual host) *</h3>
+            <h1>Open the console and start a game with Game.start();<br><br>Good luck! :)</h1>
+            <hr>
+            <h4>Instructions</h4>
+            <div style="text-align:left">
+                <p>You have to guess 50 random words, every 10 the word you have to guess increases 1 character.</p>
+                <p>You need to call Game.start() a first time to load the words file (words.txt) and then call again Game.start() to actually start the game and get the first word you'll have to guess.</p>
+                <p>Call Game.word() at any time to get the current word.</p>
+                <p>You have 10 wrong guesses per word, once this limit is reached you have to get a new word by calling Game.next()</p>
+                <p>At any time you can call Game.result() to generate the result page, but keep in mind is better if you do it at the end of the game</p>
+                <p>
+                    Game.guess('a') => will guess the letter 'a', if the letter is found, it returns the current word
+                    with that letter revealed, if not, it returns:
+                <ul>
+                    <li>true: if the word has been guess correctly</li>
+                    <li>false: if the letter is not present</li>
+                    <li>-1: if you send something different than one letter (+1 attempt)</li>
+                    <li>-2: if the allowed attemps have been reached</li>
+                    <li>-3: if you send a letter already guessed (+1 attempt)</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <script src="solve.js" type="text/javascript"></script>
+    </body>
 </html>
